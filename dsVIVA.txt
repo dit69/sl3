@@ -1,0 +1,134 @@
+First Set
+1. Data Frame
+A 2D labeled data structure in Python (like an Excel table) used to store and manipulate tabular data.
+
+2. Limitation of Label Encoding
+Label encoding assigns numeric values to categories, which may imply an ordinal relationship even if none exists. 
+This can mislead machine learning models when the data is purely nominal.
+
+3. Need for Data Normalization
+Normalization brings all features to the same scale (e.g., 0 to 1). 
+This is important for algorithms like KNN or SVM and helps in faster convergence and accurate comparisons.
+
+4. Techniques for Handling Missing Data
+
+Remove rows or columns with missing values.
+
+Replace with mean, median, or mode.
+
+Use prediction models to estimate missing values.
+
+Fill with a constant value like zero or "Unknown".
+
+
+Second Set
+1. Methods to Detect Outliers
+
+Z-Score Method: Outliers have z-scores > ±3.
+
+IQR Method: Outliers lie outside Q1−1.5×IQR or Q3+1.5×IQR.
+
+Boxplot: Visual tool to spot extreme values.
+
+2. Data Transformation Methods
+
+Log Transformation
+
+Square Root Transformation
+
+Normalization / Standardization
+
+Encoding categorical values (One-Hot / Label)
+
+3. Display Null Value Statistics
+Count how many null or missing values are present in each column of the dataset.
+
+4. Replace Outliers with Mean
+Identify outliers using IQR or Z-score and replace them with the mean value of that column.
+
+
+
+Third Set
+1. Mean, Mode, Median
+
+Mean: Average of all values.
+
+Mode: Most frequently occurring value.
+
+Median: Middle value when data is sorted.
+
+2. Standard Deviation
+Shows how spread out the data is from the mean. A higher standard deviation indicates more variance.
+
+3. Basic Statistical Summary
+Includes count, mean, standard deviation, min, max, and percentiles for each numeric column.
+
+4. Use of describe() Command
+Summarizes key statistics of numerical columns in a DataFrame. Helps in quick EDA.
+
+
+
+Text Preprocessing
+1. Stemming and Lemmatization
+
+Stemming: Cuts suffixes to form root words (e.g., “studies” → “studi”). May not always produce real words.
+
+Lemmatization: Converts words to their base dictionary form (e.g., “studying” → “study”). More accurate.
+
+Key Difference: Lemmatization is more precise and meaningful; stemming is faster but rougher.
+
+
+
+Final Set
+1. Types of Plots to Find Patterns
+Line plot, Bar plot, Histogram, Box plot, Violin plot, Scatter plot, Swarm plot.
+
+2. When to Use Distribution vs Categorical Plots
+
+Distribution Plots: Used to see how values are distributed (e.g., histograms, KDE plots).
+
+Categorical Plots: Used to compare categories (e.g., boxplots, swarm plots, violin plots).
+
+3. Conclusion from Swarm Plot (Titanic Dataset)
+Younger passengers may have had a higher survival rate. Swarm plots help visualize age vs survival grouped by gender or class.
+
+4. Violinplot and hue Parameter
+
+Hue allows comparison of a second categorical variable.
+
+Example: sns.violinplot(x='sex', y='age', hue='survived', data=titanic)
+
+
+
+Additional Data Science Viva Topics
+
+
+1. What is Data Science?
+A field that uses scientific methods, algorithms, and systems to extract knowledge and insights from structured and unstructured data.
+
+2. What is Feature Engineering?
+Creating or modifying features to improve the performance of machine learning models.
+
+3. What is Overfitting and Underfitting?
+
+Overfitting: Model performs well on training data but poorly on new data.
+
+Underfitting: Model performs poorly on both training and testing data.
+
+4. Supervised vs Unsupervised Learning
+
+Supervised Learning: Uses labeled data for training (e.g., classification).
+
+Unsupervised Learning: Finds hidden patterns in unlabeled data (e.g., clustering).
+
+5. What is Cross-Validation?
+A method to evaluate model performance by splitting data into training and validation sets multiple times.
+
+6. What is Dimensionality Reduction?
+Reducing the number of input features using techniques like PCA, while preserving important information.
+
+7. What is a Confusion Matrix?
+A table showing true positives, true negatives, false positives, and false negatives to evaluate classification models.
+
+8. What is EDA (Exploratory Data Analysis)?
+The process of analyzing data sets to summarize their main characteristics using visual methods before modeling.
