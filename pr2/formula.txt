@@ -1,0 +1,41 @@
+A. roll_no (Column A)
+A2: 1
+
+A3: =A2+1
+
+Drag this formula down to A201 to create 200 entries
+
+B. Name (Column B)
+Use this formula to alternate between names:
+
+B2: =CHOOSE(MOD(ROW()-2,4)+1,"Vivek","Kriti","Samarth","Tripti")
+
+Drag down to B201
+
+C. FE_Score (Column C)
+Generate random scores between 50-100 with some outliers:
+
+C2: =IF(RAND()<0.9, RANDBETWEEN(50,100), RANDBETWEEN(100,180))
+
+Drag down to C201
+
+D. SE_Score (Column D)
+Generate random scores between 70-100 with some outliers:
+
+D2: =IF(RAND()<0.95, RANDBETWEEN(70,100), RANDBETWEEN(100,180))
+
+Drag down to D201
+
+E. Department (Column E)
+Randomly assign departments:
+
+E2: =CHOOSE(RANDBETWEEN(1,4),"CS","AI&DS","IT","CS")
+
+Drag down to E201
+
+F. Placement (Column F)
+Randomly assign companies:
+
+F2: =CHOOSE(RANDBETWEEN(1,5),"Wipro","Microsoft","Congnizent","Google","Microsoft")
+
+Drag down to F201
